@@ -1,0 +1,136 @@
+/*CSS RESET*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --navbar-height:59px;
+}
+#navbar {
+    display: flex;
+    align-items: center;
+    
+}
+/*logo & image*/
+#logo{
+    height: 100px;
+    width: 100px;
+}
+#logo img{ 
+    height: 100px;
+    width: 100px;
+}
+/*navbar & list item*/
+#navbar{
+    position: fixed;
+    width: 100%;
+}
+#navbar ul{
+    display:flex;
+
+}
+#navbar ul li {
+    list-style: none;
+    
+}
+#navbar ul li a{
+    padding: 3px 22px;
+    display: block;
+    border-radius: 20px ;
+    text-decoration: none;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: white;
+}  
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4; 
+}
+#navbar ul li a:hover{
+    background-color:black;
+    color: white;
+}
+/*home section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 653px;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background:url("/img/backg.jpg") no-repeat center center/cover;
+    height:100%;
+    width:100%;
+    z-index: -1;
+    opacity:0.89;
+}
+#home h1{
+    color: white;
+    text-align: center;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem ;
+}
+/*Service Section*/
+#service{
+    margin:34px;
+    display:flex;
+}
+#service  .box{
+    border:5px solid brown;
+    padding: 34px;
+    border-radius: 23px;
+    background-color: #dfd9d9; 
+    margin: 3px 6px;
+
+}
+#service .box img{
+    height: 108px;
+    margin: auto;
+    display: block;
+    border-radius: 177px;
+}
+
+/*utility classes*/
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+   
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.btn{
+    padding:6px 20px;
+    border:2px solid white;
+    background-color:brown;
+    margin: 17px;
+     font-size: 1.5rem;
+    color: white;
+    border-radius: 10px;
+    
+}
+.btn:hover,.btn :active{
+    cursor: pointer;
+    font-size: xx-large;
+}
+.center{
+    text-align:center;
+}
